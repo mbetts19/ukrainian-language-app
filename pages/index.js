@@ -14,7 +14,6 @@ export default function Home() {
     <div className="min-h-screen bg-blue-100 p-6 text-center">
       <Auth />
       <h1 className="text-4xl font-bold mb-6 text-blue-900">Ukrainian Language Lessons</h1>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {lessons.map((lesson) => (
           <Link key={lesson.id} href={`/lesson/${lesson.id}`} className="bg-white p-6 rounded-lg shadow-md hover:bg-blue-200 transition">
