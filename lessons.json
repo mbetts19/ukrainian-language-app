@@ -1,0 +1,51 @@
+[
+  {
+    "id": "lesson1",
+    "title": "Basic Greetings",
+    "words": [
+      { "uk": "Привіт", "en": "Hello" },
+      { "uk": "Як справи?", "en": "How are you?" }
+    ]
+  },
+  {
+    "id": "lesson2",
+    "title": "Common Phrases",
+    "words": [
+      { "uk": "Дякую", "en": "Thank you" },
+      { "uk": "Будь ласка", "en": "You're welcome" }
+    ]
+  },
+  {
+    "id": "lesson3",
+    "title": "Numbers",
+    "words": [
+      { "uk": "Один", "en": "One" },
+      { "uk": "Два", "en": "Two" },
+      { "uk": "Три", "en": "Three" },
+      { "uk": "Чотири", "en": "Four" },
+      { "uk": "П’ять", "en": "Five" }
+    ]
+  },
+  {
+    "id": "lesson4",
+    "title": "Colors",
+    "words": [
+      { "uk": "Червоний", "en": "Red" },
+      { "uk": "Синій", "en": "Blue" },
+      { "uk": "Жовтий", "en": "Yellow" },
+      { "uk": "Зелений", "en": "Green" },
+      { "uk": "Чорний", "en": "Black" }
+    ]
+  },
+  {
+    "id": "lesson5",
+    "title": "Food",
+    "words": [
+      { "uk": "Яблуко", "en": "Apple" },
+      { "uk": "Хліб", "en": "Bread" },
+      { "uk": "Молоко", "en": "Milk" },
+      { "uk": "Сир", "en": "Cheese" },
+      { "uk": "М'ясо", "en": "Meat" }
+    ]
+  }
+]
