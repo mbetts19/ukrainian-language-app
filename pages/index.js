@@ -1,44 +1,48 @@
-import { useEffect, useState } from "react";
-import { getLessons } from "../api/lessons"; // Ensure this function exists in `api/lessons.js`
-import Auth from "../components/Auth"; // ✅ Ensure `Auth.js` exists inside `/components/`
 import Link from "next/link";
+import Auth from "../components/Auth";
 
 export default function Home() {
-  const [lessons, setLessons] = useState([]);
-
-  useEffect(() => {
-    getLessons().then((data) => {
-      if (Array.isArray(data)) {
-        setLessons(data);
-      } else {
-        console.error("Invalid lessons data:", data);
-      }
-    }).catch((error) => {
-      console.error("Error fetching lessons:", error);
-    });
-  }, []);
-
   return (
-    <div className="min-h-screen bg-light p-4 text-center">
+    <div>
+      {/* Navigation Bar */}
+      <nav className="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/lessons">Lessons</a>
+        <a href="/contact">Contact</a>
+      </nav>
+
+      {/* Hero Section */}
+      <header className="hero">
+        <h1>Learn Ukrainian with Ease</h1>
+        <p style={{ fontSize: "1.5rem", fontWeight: "400" }}>
+          Master the language with interactive lessons and AI-driven learning.
+        </p>
+      </header>
+
+      {/* Authentication */}
       <Auth />
 
-      <h1 className="text-4xl font-bold mb-6 text-primary">
-        Ukrainian Language Lessons
-      </h1>
+      {/* Lesson Cards Grid */}
+      <section className="grid">
+        <LessonCard title="Basic Greetings" id="1" />
+        <LessonCard title="Common Phrases" id="2" />
+        <LessonCard title="Numbers" id="3" />
+        <LessonCard title="Colors" id="4" />
+        <LessonCard title="Food" id="5" />
+      </section>
 
-      {lessons.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {lessons.map((lesson) => (
-            <Link key={lesson.id} href={`/lesson/${lesson.id}`}>
-  		<div className="lesson-card">
-    			<h2>{lesson.title}</h2>
-  		</div>
-	    </Link>
-          ))}
-        </div>
-      ) : (
-        <p className="text-secondary text-lg mt-4">No lessons available.</p>
-      )}
+      {/* Footer */}
+      <footer className="footer">
+        <p>&copy; 2025 Ukrainian Language App | Inspired by Apple</p>
+      </footer>
     </div>
   );
 }
+
+// Reusable Lesson Card Component
+const LessonCard = ({ title, id }) => (
+  <Link href={`/lesson/${id}`}>
+    <div className="lesson-card">{title}</div>
+  </Link>
+);
