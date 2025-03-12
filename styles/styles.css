@@ -1,90 +1,97 @@
-/* Apply Apple-style global settings */
+/* Global Styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f7; /* Light gray Apple-like background */
-  color: #1d1d1f; /* Dark text for readability */
-}
-
-/* Centered, bold headlines like Apple */
-h1, h2, h3 {
-  font-weight: 600;
-  text-align: center;
+  background: linear-gradient(to bottom, #f8fafd, #eaf2fc); /* Apple-like gradient */
+  color: #1d1d1f;
 }
 
 /* Navigation Bar */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 1rem 3rem;
+  background: white;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Links in the navbar */
-.navbar a {
-  color: #333;
-  text-decoration: none;
+.nav-links a {
   margin: 0 15px;
-  font-size: 16px;
+  text-decoration: none;
+  color: #333;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
   color: #0071e3; /* Apple Blue */
 }
 
-/* Hero Section (Apple-like full-width banner) */
+.auth-button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Hero Section */
 .hero {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url('/public/hero.jpg') no-repeat center center/cover; /* Use a clean background */
-  color: white;
   text-align: center;
+  padding: 10rem 2rem;
+  position: relative;
+}
+
+.hero h1 {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* Lesson Cards (Apple-like layout) */
-.lesson-card {
-  display: block;
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.subtext {
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #1d1d1f;
-  transition: transform 0.3s ease-in-out;
+  color: #666;
+  margin-bottom: 1.5rem;
 }
 
-.lesson-card:hover {
-  transform: scale(1.05);
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* Responsive Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 3rem;
+.primary-btn, .secondary-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem;
-  background: #1d1d1f;
+.primary-btn {
+  background: #0071e3;
   color: white;
+}
+
+.primary-btn:hover {
+  background: #005bb5;
+}
+
+.secondary-btn {
+  border: 2px solid #0071e3;
+  color: #0071e3;
+}
+
+.secondary-btn:hover {
+  background: #eaf2fc;
+}
+
+/* Floating Hero Image */
+.hero-image {
+  width: 50%;
+  max-width: 600px;
+  margin-top: 3rem;
 }
