@@ -1,0 +1,140 @@
+
+/* Define global CSS variables for colors, spacing, and typography */
+:root {
+  --primary: #3b82f6;
+  --secondary: #6b7280;
+  --background: #f9fafb;
+  --text-color: #111827;
+  --padding: 1rem;
+  --radius: 0.5rem;
+}
+
+/* Utility Classes */
+
+/* Text Alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Colors */
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-light { background-color: var(--background); }
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-dark { color: var(--text-color); }
+
+/* Spacing */
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-4 { padding: var(--padding); }
+.p-8 { padding: 2rem; }
+
+.m-1 { margin: 0.25rem; }
+.m-2 { margin: 0.5rem; }
+.m-4 { margin: var(--padding); }
+.m-8 { margin: 2rem; }
+
+/* Borders & Radius */
+.rounded { border-radius: var(--radius); }
+.rounded-lg { border-radius: 1rem; }
+.border { border: 1px solid var(--secondary); }
+.border-primary { border: 1px solid var(--primary); }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+/* Flexbox */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.justify-center { justify-content: center; }
+.items-center { align-items: center; }
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
+/* Define global CSS variables for colors, spacing, and typography */
+:root {
+  --primary: #3b82f6;
+  --secondary: #6b7280;
+  --background: #f9fafb;
+  --text-color: #111827;
+  --padding: 1rem;
+  --radius: 0.5rem;
+}
+
+/* Utility Classes */
+
+/* Text Alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Colors */
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-light { background-color: var(--background); }
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-dark { color: var(--text-color); }
+
+/* Spacing */
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-4 { padding: var(--padding); }
+.p-8 { padding: 2rem; }
+
+.m-1 { margin: 0.25rem; }
+.m-2 { margin: 0.5rem; }
+.m-4 { margin: var(--padding); }
+.m-8 { margin: 2rem; }
+
+/* Borders & Radius */
+.rounded { border-radius: var(--radius); }
+.rounded-lg { border-radius: 1rem; }
+.border { border: 1px solid var(--secondary); }
+.border-primary { border: 1px solid var(--primary); }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+/* Flexbox */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.justify-center { 
